@@ -1,0 +1,17 @@
+
+spring:
+  redis:
+    database: 0
+    port: 6379
+    host: 192.168.0.100
+    password: kai
+    timeout: 1s
+    #lettuce 是一个可以做缓冲池的插件，也可以不用，使用pool为三级参数，即spring.redis.pool...
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+        max-wait: -1ms
+server:
+  port: 8082
