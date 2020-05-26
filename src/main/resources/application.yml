@@ -1,12 +1,11 @@
-
 spring:
   redis:
-    database: 0 # redis¿â£¬ÕâÀïÑ¡Ôñ0¿â
-    port: 6379 # redis ¶Ë¿Ú
+    database: 0 # redisåº“ï¼Œè¿™é‡Œé€‰æ‹©0åº“
+    port: 6379 # redis ç«¯å£
     host: 192.168.0.100 # redis ip
     password: kai
     timeout: 1s
-    #lettuce ÊÇÒ»¸ö¿ÉÒÔ×ö»º³å³ØµÄ²å¼ş£¬Ò²¿ÉÒÔ²»ÓÃ£¬Ê¹ÓÃpoolÎªÈı¼¶²ÎÊı£¬¼´spring.redis.pool...
+    #lettuce æ˜¯ä¸€ä¸ªå¯ä»¥åšç¼“å†²æ± çš„æ’ä»¶ï¼Œä¹Ÿå¯ä»¥ä¸ç”¨ï¼Œä½¿ç”¨poolä¸ºä¸‰çº§å‚æ•°ï¼Œå³spring.redis.pool...
     lettuce:
       pool:
         max-active: 8
